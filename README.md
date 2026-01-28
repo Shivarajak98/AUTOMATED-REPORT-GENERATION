@@ -18,8 +18,7 @@ Instead of writing reports by hand, the program does everything automatically. I
 
 
 #Output :
-https://github.com/Shivarajak98/AUTOMATED-REPORT-GENERATION/issues/2#issue-3863853991
 
-<img width="848" height="519" alt="Image" src="https://github.com/user-attachments/assets/fba141f8-024a-417c-a23f-75182e2d71ee" />
+
 
 
