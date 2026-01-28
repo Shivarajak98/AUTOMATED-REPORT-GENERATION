@@ -19,6 +19,6 @@ Instead of writing reports by hand, the program does everything automatically. I
 
 #OUTPUT :
 
-https://github.com/Shivarajak98/AUTOMATED-REPORT-GENERATION/issues/2#issue-3863908531
+https://github.com/Shivarajak98/AUTOMATED-REPORT-GENERATION/issues/4#issue-3863908531
 
 
