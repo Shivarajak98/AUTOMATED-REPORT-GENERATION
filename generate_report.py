@@ -1,10 +1,10 @@
 import csv
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle
+from reportlab.platypus import SimpleDocTemplate,Paragraph, Table,TableStyle
 from reportlab.lib import colors
 
-def read_and_analyze_data(file_path):
+def read_and_analyze_data(file_path) :
     data=[]
     total_units=0
     total_revenue =0
@@ -36,7 +36,7 @@ def generate_pdf_report(data , total_units, total_revenue , output_file):
         f"<b>Total Revenue:</b> ${total_revenue:,.2f}",
         styles['Normal']
     ))
-    elements.append(Paragraph("<br/>Detailed Sales Data:" , styles['Heading2']))
+    elements.append(Paragraph("<br/>Detailed Sales Data:" ,  styles['Heading2']))
 
     #Table
     table = Table(data)
@@ -50,13 +50,10 @@ def generate_pdf_report(data , total_units, total_revenue , output_file):
         ))
     elements.append(table)
     doc.build(elements)
-
 if __name__== "__main__" :
     input_file= "sales_data.csv"
     output_file = "sales_report.pdf"
-
     data, total_units,total_revenue= read_and_analyze_data(input_file)
-    generate_pdf_report(data,total_units , total_revenue , output_file)
+    generate_pdf_report(data,total_units ,total_revenue ,output_file)
 
     print("PDF report generated successfully!")
-
