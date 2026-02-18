@@ -27,10 +27,10 @@ def generate_pdf_report(data , total_units, total_revenue , output_file):
     styles=getSampleStyleSheet()
     elements=[]
 
-    #Title
+#Title
     elements.append(Paragraph("Sales Analysis Report", styles['Title']))
 
-    #Summary
+#Summary
     elements.append(Paragraph(
         f"<b>Total Units Sold:</b> {total_units}<br/>"
         f"<b>Total Revenue:</b> ${total_revenue:,.2f}",
@@ -38,7 +38,7 @@ def generate_pdf_report(data , total_units, total_revenue , output_file):
     ))
     elements.append(Paragraph("<br/>Detailed Sales Data:" ,  styles['Heading2']))
 
-    #Table
+#Table
     table = Table(data)
     table.setStyle(TableStyle(
         [
